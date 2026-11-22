@@ -1,4 +1,4 @@
-// Run with: pnpm test
+// Run with: bun run test
 import { squarify } from "../src/lib/treemap.ts";
 
 const values = [6, 6, 4, 3, 2, 2, 1];

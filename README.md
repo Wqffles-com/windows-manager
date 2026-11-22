@@ -16,23 +16,23 @@ Some features need administrator rights. Use *Restart as administrator* in the s
 
 ## Develop (on Windows)
 
-Prerequisites: [Rust](https://rustup.rs), Node 20+, pnpm and the [Tauri prerequisites](https://tauri.app/start/prerequisites/) (WebView2 is already part of Windows 11).
+Prerequisites: [Rust](https://rustup.rs), [Bun](https://bun.sh) and the [Tauri prerequisites](https://tauri.app/start/prerequisites/) (WebView2 is already part of Windows 11).
 
 ```bash
-pnpm install
+bun install
 ```
 
 ```bash
-pnpm tauri dev
+bun tauri dev
 ```
 
 Build an installer (`.msi` and NSIS `.exe`, written to `src-tauri/target/release/bundle`):
 
 ```bash
-pnpm tauri build
+bun tauri build
 ```
 
-Tests: `pnpm test` (treemap layout) and `cargo test` in `src-tauri` (disk scanner, registry encoding).
+Tests: `bun run test` (treemap layout) and `cargo test` in `src-tauri` (disk scanner, registry encoding).
 
 ## Layout
 
